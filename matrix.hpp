@@ -1,3 +1,4 @@
+#include <sstream>
 namespace matrix{
 template <class data_t>
 cmatr<data_t> cmatr<data_t>::operator*(const cmatr<data_t>& A) const
@@ -159,7 +160,7 @@ std::istream& operator>>(std::istream& is, cmatr<data_t>& a)
 		char str[str_size];
 		is.getline (str, str_size-1);
 		if (!is) break;
-		std::istrstream istr(str);
+		std::istringstream istr(str);
 		a.size_stl = 0;
 		while (istr)
 		{

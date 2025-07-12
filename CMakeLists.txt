@@ -24,3 +24,5 @@ add_executable(${ProjectId} main.cpp)
 target_link_libraries(${ProjectId} PRIVATE MatrixLib)
 # target_link_libraries(tictactoe user32 gdi32 kernel32)
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${ProjectId})
+
+file(COPY matrix.txt DESTINATION "${CMAKE_CURRENT_BINARY_DIR}")

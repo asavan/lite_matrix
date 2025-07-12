@@ -22,7 +22,7 @@ void Gauss( cmatr<double> A, cmatr<double>& B)
 					addr = k;
 				}
 			}
-			if(fabs((double)temp_max)< eps){throw std::exception("det = 0");}
+			if(fabs((double)temp_max)< reverse::eps){throw std::exception("det = 0");}
 			if (addr!=i) 
 			{
 				//data_t *temp = A[i];	A[i] = A[addr];	A[addr] = temp;
